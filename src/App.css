@@ -27,6 +27,317 @@
 .App-link {
   color: #61dafb;
 }
+body{
+  background:black;
+  font-family: "Roboto";
+  color:white;
+}
+
+header{
+  width:75%;
+  height:40px;
+  margin-top:75px;
+
+  display:flex;
+  justify-content:space-between;
+}
+header nav{
+  display:inline-block;
+}
+header nav ul{
+  display:inline-block;
+}
+header nav ul li{
+  display: inline-block;
+  padding-top:10px;
+  padding-bottom:10px;
+  margin-left:6px;
+
+
+
+  background: linear-gradient(90deg, #9F49E3 7.69%, #B84ECD 100%) no-repeat;
+    background-position: 0px 100%;
+        background-size: 100% 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px    ;
+        padding-left: 15px;
+        color:white;
+
+}
+
+header nav ul li:hover{
+  background-size: 100% 100%;
+}
+
+header a{}
+header a img{
+  height:40px;
+  margin-left:65px;
+}
+header nav ul{
+  margin:0px;
+  font-size:17px;
+}
+
+header nav ul li a{
+  margin:auto;
+  text-decoration: none;
+  color:white
+}
+
+header nav ul .login{
+  background-size:100% 100%;
+  background:#ffffff;
+  color: #9F49E3;
+}
+
+
+header nav ul li a:visited{
+  text-decoration: none;
+  color: inherit;
+  
+
+}
+
+header nav ul .upload{
+  background-size:100% 100%;
+}
+.burger-button{
+  display: none;
+}
+
+.welcome{
+  margin-top:65px;
+  width:50%;
+  background-color:white;
+  color: #000;
+  margin-left:25%;
+  margin-bottom: 24px;
+  padding-top:32px;
+  padding-bottom: 32px;
+}
+.welcome h1{
+  margin-top: 0px;
+  margin-left:16px;
+  margin-bottom: 12px;
+}
+.welcome h2{
+  margin-left:16px;
+  margin-bottom:0px;
+  margin-top: 0px;
+}
+.searchbar{
+  width: 50%;
+  margin-left: 25%;
+  display: flex;
+}
+.searchbar input{
+  height: 60px;
+  padding: 0px;
+  padding-left: 16px;
+  border: none!important;
+  border: none;
+  width: calc(100% - 60px);
+}
+.searchbar input:focus{
+  outline: none;
+}
+.searchbar input::placeholder{
+  color: #C4C4C4;
+
+}
+.searchbar button{
+  width: 60px;
+  height: 60px;
+    background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
+    border: none;
+}
+.carousel-header{
+
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25%;
+  margin-top: 46px;
+  width: 50%;
+}
+.carousel{
+  height: 145px;
+  width: 100%;
+  background-color: white;
+  margin-left: 0px;
+  margin-top: 15px;
+}
+.body-header{
+  width:50%;
+  margin-left: 25%;
+  font-size: 38px;
+  margin-top: 90px;
+  margin-bottom: 15px;
+}
+.body{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.left{
+  padding-left: 27px;
+}
+.right{
+  padding-left: 27px;
+  padding-right: 27px;
+}
+.grid-memes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.grid-element{
+  background:white;
+  height: 100px;
+}
+.body-meme{
+  margin-top: 57px;
+}
+.center-meme{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
+.meme-left{
+  height: 600px;
+  background: white;
+}
+.signup-container {
+  display: grid;
+  grid-template-columns: 35fr 65fr;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.signup-left{
+  background:linear-gradient(90.33deg, #A54ADE 0.3%, #DC80B3 40.38%);
+  padding-left: 51px;
+  padding-top: 107px;
+
+}
+.signup-right{
+  background: white;
+  padding-top: 108px;
+  color: black;
+}
+.already-a-member{
+  text-decoration: none;
+  color:black;
+  float: right;
+  margin-right: 54px;
+}
+.signup-logo{
+  height: 40px;
+  display: block;
+}
+.signup-title{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+}
+
+.signup-social{
+  height:51px;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  display: flex;
+  color: white;
+  margin-bottom: 18px;
+  border-radius: 5px;
+}
+.google{
+  background-color: #4688f1;
+  ;
+}
+.facebook{
+  background-color:#1778f2;
+}
+.signup-social img{
+  height: 30px;
+  margin-left: 10px;
+  margin-right:20px;
+}
+
+.signup-discover{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 900;
+font-size: 30px;
+}
+.signup-form{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 58px;
+}
+.signup-box{
+  border-top: 1px solid black;
+  margin-top: 39px;
+  padding-top: 35px;
+}
+.signup-two-fields{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+.field{
+  margin-bottom: 13px;
+
+}
+
+.signup-box button{
+  margin-top: 22px;
+  height: 45px;
+  width: 200px;
+  border:none;
+  background: linear-gradient(90deg, #BB4FCA 0%, #C67875 100%);
+  border-radius: 4px;
+  color: white;
+}
+.field label{
+  display: block;
+}
+.field input{
+  width: 100%;
+  height: 51px;
+  border:none;
+  margin: 0;
+  padding: 0;
+  background-color: #C4C4C4;
+  border-radius: 5px;
+}
+.field input:focus{
+  outline:none;
+}
+.image-selector{
+  height: 51px;
+  width: 100%;
+  border:none;
+  background: linear-gradient(90deg, #BB4FCA 0%, #C67875 100%);
+  border-radius: 4px;
+  color: white;
+  margin:0;
+  padding:0;
+  margin-bottom: 13px;
+
+}
+.upload-button{
+  height: 51px;
+  width: 200px;
+  border:none;
+  background: linear-gradient(90deg, #BB4FCA 0%, #C67875 100%);
+  border-radius: 4px;
+  color: white;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +346,92 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  body{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .burger-button{
+    display: inline-block;
+    padding-top: 8px;
+  }
+  header{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  header nav{
+    display: none;
+    z-index: 0;
+
+  }
+  header nav ul{
+    margin: 0px;
+    padding: 0;
+    display: block;
+    min-height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    background-color: black;
+
+
+  }
+  header nav ul li{
+    display: block;
+
+  }
+  .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  header{
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+  }
+  header a img{
+    margin-left: 0;
+  }
+  .welcome{
+    width: 100%;
+    margin-left: 0;
+  }
+  .searchbar{
+    width: 100%;
+    margin-left: 0%;
+  }
+  .carousel-header{
+    width: 100%;
+    margin-left: 0%;
+  }
+  .left{
+    display: none;
+  }
+  .right{
+    display: none;
+  }
+  .body{
+    grid-template-columns: 1fr;
+  }
+  .grid-memes{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .signup-left{
+    display: none;
+  }
+  .signup-right{
+  }
+  .signup-container{
+    grid-template-columns: 1fr;
+  }
+  .unwrapped{
+    display: block;
+  }
+  .wrapped{
+    display: none;
+  }
+
 }

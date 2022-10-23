@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Routes,Route,BrowserRouter} from "react-router-dom";
+import MemePage from './MemePage';
+import NotFound from './components/NotFound';
+import Signup from './Signup';
+import Signin from './Signin';
+import Upload from './Upload';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+  <Routes>
+    <Route exact path="/" element={<App/>} />
+    <Route path="/meme/:id" element={<MemePage/>} />
+    <Route path="/signup" element={<Signup/>} />
+    <Route path="/signin" element={<Signin/>} />
+    <Route path="/upload" element={<Upload/>} />
+
+    <Route element={<NotFound/>}/>
+  </Routes>
+  </BrowserRouter>
+,
   document.getElementById('root')
 );
 
